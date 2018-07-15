@@ -14,7 +14,7 @@ int main ()
     for (i = 0; i < strlen(expression); i++)
 
     {
-        if (expression[i]!= '(' && expression[i]!= ')')
+        if (expression[i]!= '(' && expression[i]!= ')' && expression[i]!= ' ')
         {
             cout << "Invalid input" << endl;
             return 0;
