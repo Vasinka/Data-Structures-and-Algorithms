@@ -46,7 +46,7 @@ queue<int> concatenate(queue<int> queue1, queue<int> queue2) //todo: да го �
 return newQueue;
 }
 
-int main ()
+int main () //crazy main function
 {
     queue<int> mnOpashka, gotinaOpashka, ludaOpashka;
 
