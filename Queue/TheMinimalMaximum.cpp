@@ -1,17 +1,17 @@
+//Task: You are given a queue of stacks. Write a program to find the minimal among the maximum elements of the stack
 #include<iostream>
 #include<queue>
 #include<stack>
 using namespace std;
 
-int maxElement (stack<int> st) //function that returns the maximum element of a stack
+int maxElement (stack<int> st) //function that finds the maximum element of a stack
 {
-    int currentMax;
+    int currentMax;            //todo: rename some variables
     currentMax = st.top();
     st.pop();
 
     while(!st.empty())
     {
-        //st.pop();
 
         int currentElement;
         currentElement = st.top();
@@ -60,7 +60,7 @@ int main ()
 
     minimalMaximum = maxElement(firstStack);
 
-    while (!queueOfStacks.empty())
+    while (!queueOfStacks.empty()) //go through every stack
     {
         stack<int> currentStack;
         currentStack = queueOfStacks.front();
@@ -69,7 +69,7 @@ int main ()
         int currentMaximum; //max element of the current stack
         currentMaximum = maxElement(currentStack);
 
-        if (currentMaximum < minimalMaximum)
+        if (currentMaximum < minimalMaximum) //find the minimal among the maximum elements
         {
             minimalMaximum = currentMaximum;
         }
