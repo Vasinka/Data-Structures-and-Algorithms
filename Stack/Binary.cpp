@@ -1,4 +1,5 @@
 #include<iostream>
+#include<iostream>
 #include<stack>
 using namespace std;
 int main ()
@@ -9,15 +10,15 @@ int main ()
 
     stack <int> st;
 
-    while (number)    // äåëèì number öåëî÷èñëåíî íà 2 è çàïèñâàìå îñòàòúêà îò äåëåíèåòî â ñòåêà
+    while (number)    // делим number целочислено на 2 и записваме остатъка от делението в стека
     {
         st.push(number%2);
 
         number /= 2;
     }
 
-    while (!st.empty()) // èçâåæäàìå åëåìåíòèòå íà ñòåêà åäèí ïî åäèí
-    {                   //òàêà íàïðàêòèêà èìàìå íà ñòàíäàðòíèÿ èçõîä number â äâîè÷íèÿ ìó çàïèñ
+    while (!st.empty()) // извеждаме елементите на стека един по един
+    {                   //така напрактика имаме на стандартния изход number в двоичния му запис
         cout << st.top();
 
         st.pop();
@@ -27,4 +28,5 @@ int main ()
 
     return 0;
 }
+
  
