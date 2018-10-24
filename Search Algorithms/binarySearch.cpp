@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int binarySearch(int arr[], int left, int right, int x)
+int binarySearch(int arr[], int left, int right, int x) // first occurrence of element
 {
     while (left <= right)
     {
